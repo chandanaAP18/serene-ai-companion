@@ -13,9 +13,53 @@ An AI-powered companion for mental health and wellness support. This application
 
 ## Tech Stack
 
-- **Frontend**: React 19 + TypeScript + Vite
+- **Frontend**: React 18 + TypeScript + Vite
 - **Styling**: Tailwind CSS + shadcn/ui
-- **Backend**: Supabase (PostgreSQL + Functions)
+- **AI**: OpenAI API (via Supabase Edge Functions)
+- **Backend**: Supabase (PostgreSQL + Edge Functions)
 - **Testing**: Vitest
 
+## Getting Started
 
+### Prerequisites
+
+- Node.js 18+
+- A Supabase project
+- An OpenAI API key
+
+### Installation
+
+```bash
+npm install
+```
+
+### Environment Variables
+
+Copy `.env.example` to `.env` and fill in your credentials:
+
+```env
+VITE_SUPABASE_URL=your_supabase_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
+
+In your Supabase project, set the Edge Function secret:
+
+```
+OPENAI_API_KEY=your_openai_api_key
+```
+
+### Development
+
+```bash
+npm run dev
+```
+
+### Build
+
+```bash
+npm run build
+```
+
+## License
+
+MIT
