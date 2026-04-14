@@ -18,29 +18,4 @@ An AI-powered companion for mental health and wellness support. This application
 - **Backend**: Supabase (PostgreSQL + Functions)
 - **Testing**: Vitest
 
-## Getting Started
 
-### Prerequisites
-- Node.js 18+
-- Bun (recommended) or npm/yarn
-
-### Installation
-
-1. Clone the repository
-2. Copy `.env.example` to `.env` and fill in your Supabase credentials
-3. Install dependencies:
-   ```bash
-   bun install
-   ```
-4. Start the development server:
-   ```bash
-   bun run dev
-   ```
-
-## Available Scripts
-
-- `bun run dev` - Start development server
-- `bun run build` - Build for production
-- `bun run lint` - Run ESLint
-- `bun run test` - Run tests
-- `bun run test:watch` - Run tests in watch mode
